@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(2, 12, 31);
+  }
+
+  .blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: white;    }
+    49%{    color: white; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color:white;    }
+}
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 20px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.829);
+    padding: 16px;
+    text-align: center;
+    background-color: #d11616;
+  }
+  .card1{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.829);
+    padding: 16px;
+    text-align: center;
+    background-color: #680d7a;
+  }
+  .card2{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.829);
+    padding: 16px;
+    text-align: center;
+    background-color: #07530e;
+  }
+  .card3{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.829);
+    padding: 16px;
+    text-align: center;
+    background-color: #ff9c08;
+  }
+  .card4{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.829);
+    padding: 16px;
+    text-align: center;
+    background-color: #10078d;
+  }
+  .card5{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.829);
+    padding: 16px;
+    text-align: center;
+    background-color: #a12616;
+  }
+  p{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 35px;
+      font-weight: 700;
+  }
+  span{
+    font-size: 20px;
+    font-weight: 400;
+  }
